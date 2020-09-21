@@ -24,16 +24,6 @@ script:
   - npm run gulp
 
 deploy:
-  - provider: s3
-    skip_cleanup: true
-    access_key_id: $AWS_KEY_ID
-    secret_access_key: $AWS_ACCESS_KEY
-    local_dir: dist
-    bucket: black-highlighter-dist
-    on:
-      os: linux
-      node_js: 12
-      branch: master
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
@@ -48,10 +38,8 @@ deploy:
       branch: master
 
 notifications:
-  - email:
+  email:
     recipients:
-      - ammon.i.smith@gmail.com
-      - gophilm@gmail.com
-      - rossjrw@gmail.com
+      - scpcn.tech@outlook.com
     on_success: change
     on_failure: always
