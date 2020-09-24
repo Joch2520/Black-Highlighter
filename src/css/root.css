@@ -11,7 +11,7 @@
 	/* set this to your theme's full name */
 
 	/* Header */
-	--logo-image: url("https://zh.xjo.ch/scp/bhl/img/logo.svg");
+	--logo-image: url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/img/logo.svg");
 	--header-title: "SCP Foundation";
 	--header-subtitle: "SECURE, CONTAIN, PROTECT";
 

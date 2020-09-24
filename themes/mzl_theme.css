@@ -303,7 +303,7 @@ a {
 	position: relative;
 	z-index: 10;
 	height: 9.375rem;
-	background-image: url("https://zh.xjo.ch/scp/bhl/images/logo.svg");
+	background-image: url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/images/logo.svg");
 	background-image: var(--logo-image);
 	background-repeat: no-repeat;
 	background-position: left 0.75rem top 1.1875rem;

@@ -23,8 +23,8 @@
 
 /*  Imports (!IMPT)
 ==============================================================================*/
-@import url("https://zh.xjo.ch/scp/bhl/stable/styles/normalize.min.css");
-@import url("https://zh.xjo.ch/scp/bhl/stable/styles/black-highlighter.min.css");
+@import url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/stable/styles/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/stable/styles/black-highlighter.min.css");
 
 /*  Root Variables (!ROOT)
 ==============================================================================*/

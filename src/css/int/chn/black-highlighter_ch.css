@@ -10,7 +10,7 @@
         --theme-id:"黑色标记笔";
         --theme-name:"黑色标记笔";
 
-        --logo-image:url(https://zh.xjo.ch/scp/bhl/img/logo.svg);
+        --logo-image:url(https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/img/logo.svg);
         --header-title:"SCP基金会";
         --header-subtitle:"控制，收容，保护";
 
@@ -2124,7 +2124,7 @@
         grid-area: header;
         z-index: 10;
         height: var(--final-header-height-on-desktop);
-        background-image: url("https://zh.xjo.ch/scp/bhl/images/logo.svg");
+        background-image: url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/images/logo.svg");
         background-image: var(--logo-image);
         background-repeat: no-repeat;
         background-position: left 0.75rem top 1.1875rem;
@@ -2951,7 +2951,7 @@
 
         #header {
             height: var(--header-height-on-mobile);
-            background-image: url("https://zh.xjo.ch/scp/bhl/images/logo.svg");
+            background-image: url("https://cdn.jsdelivr.net/gh/scp-cn-tech/black-highlighter@gh-pages/images/logo.svg");
             background-image: var(--logo-image);
             --size: calc(var(--final-header-height-on-mobile) - 0.875rem);
             --y-offset: 1.5rem;
