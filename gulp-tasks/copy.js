@@ -10,8 +10,8 @@ const assetsDirs = [
     dist: "./dist/img/",
   },
   {
-    src: "./src/legacy/",
-    dist: "./dist/stable/styles/",
+    src: "./src/legacy/chinese/",
+    dist: "./dist/stable/styles/chinese/",
   },
   {
     src: "./src/root/",

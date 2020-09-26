@@ -48,11 +48,12 @@ function normalizeFile() {
       file.contents = Buffer.from(fileContents);
       cb(null,file);
     }))
-    .pipe(gulp.dest("./dist/css/min"));
+    .pipe(gulp.dest("./dist/css/min"))
+    .pipe(gulp.dest("./dist/stable/styles"));
 }
 
 function addSupports() {
-  return gulp
+  gulp
     .src([
       "./dist/css/black-highlighter.css",
       "./dist/css/min/black-highlighter.min.css",
@@ -65,6 +66,9 @@ function addSupports() {
       cb(null,file);
     }))
   .pipe(gulp.dest("./dist/css/"));
+
+  return gulp.src("./dist/css/min/black-highlighter.min.css")
+  .pipe(gulp.dest("./dist/stable/styles/"))
 }
 
 // exports
