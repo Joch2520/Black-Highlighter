@@ -14,7 +14,8 @@ matrix:
     - os: windows
   fast_finish: true
 
-cache: npm
+cache:
+  npm: false
 
 env:
   matrix:
