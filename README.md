@@ -19,7 +19,7 @@ You can build Black Highlighter from its source files using the following:
 
 ```
 npm install
-npm run gulp
+npm run build
 ```
 
 This will perform the combinations, minifications, etc. all automatically. All affected files will appear in `/dist`.
