@@ -10,12 +10,13 @@
 
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
-	--box-shadow: rgb(var(--swatch-primary-darker));
+	--tab-border-color: rgb(var(--swatch-primary-darker));
+	--box-shadow: var(--tab-border-color);
 	zoom: unset;
 	display: flex;
 	flex-wrap: wrap;
 	border-color: rgb(140, 20, 25);
-	border-color: rgb(var(--swatch-primary-darker));
+	border-color: var(--tab-border-color);
 	width: calc(100% - 0.125rem);
 	margin: 0 auto;
 	border: 0;
@@ -28,10 +29,10 @@
 	zoom: unset;
 	background-image: none;
 	background-color: rgb(244, 244, 244);
-	background-color: rgb(var(--swatch-menubg-light-color));
+	background-color: rgb(var(--swatch-secondary-color));
 	border: unset;
 	color: rgb(12, 12, 12);
-	color: rgb(var(--swatch-text-dark));
+	color: rgb(var(--swatch-text-general));
 }
 
 .yui-navset .yui-nav a:hover,
@@ -45,9 +46,9 @@
 
 .yui-navset .yui-nav li,
 .yui-navset .yui-navset-top .yui-nav li {
-	--box-shadow: rgb(var(--swatch-primary-darker));
+	--box-shadow: var(--tab-border-color);
 	background-color: rgb(244, 244, 244);
-	background-color: rgb(var(--swatch-menubg-light-color));
+	background-color: rgb(var(--swatch-secondary-color));
 	border-color: transparent;
 	max-width: 100%;
 	padding: 0;
@@ -105,7 +106,7 @@
 .yui-navset .yui-nav .selected a {
 	/* Undoes a color set by wikidot's default layout */
 	color: rgb(252, 252, 252) !important;
-	color: rgb(var(--white-monochrome)) !important;
+	color: rgb(var(--swatch-text-secondary-color)) !important;
 	width: 100%;
 	background-image: none;
 }
@@ -126,20 +127,20 @@
 
 .yui-navset .yui-content {
 	background-color: rgba(244, 244, 244, 0.25);
-	background-color: rgba(var(--swatch-menubg-light-color), 0.25);
+	background-color: rgba(var(--swatch-secondary-color), 0.25);
 	/* content background color */
 }
 
 .yui-navset .yui-content,
 .yui-navset .yui-navset-top .yui-content {
 	border-color: rgb(170, 170, 170);
-	border-color: rgb(var(--swatch-menubg-medium-color));
+	border-color: rgb(var(--swatch-tertiary-color));
 	/* content border */
 }
 
 .yui-navset-left .yui-content {
 	border-left-color: rgb(244, 244, 244);
-	border-left-color: rgb(var(--swatch-menubg-light-color));
+	border-left-color: rgb(var(--swatch-secondary-color));
 	/* different border color */
 }
 
@@ -153,11 +154,18 @@ div.blockquote {
 	border-color: rgba(var(--swatch-border-color),0.25);
 	border-width: 0.0625rem;
 	background-color: rgb(244, 244, 244);
-	background-color: rgb(var(--swatch-menubg-light-color));
+	background-color: rgb(var(--swatch-secondary-color));
 	box-shadow: 0em 0.0625rem 0.125em rgba(0, 0, 0, 0.1);
 	box-shadow: 0em 0.0625rem 0.125em var(--box-shadow);
 	margin: 0.5em 40px;
 	padding: 0 1em;
+}
+
+@supports (display: flow-root) {
+	blockquote,
+	div.blockquote {	
+		display: flow-root;
+	}
 }
 
 .curved {
@@ -172,7 +180,7 @@ div.blockquote {
 	margin: 1em auto;
 	padding: 0.15em 1em;
 	background-color: rgba(170, 170, 170, 0.25);
-	background-color: rgba(var(--swatch-menubg-medium-color), 0.25);
+	background-color: rgba(var(--swatch-tertiary-color), 0.25);
 	border-left: 0.5em solid rgba(140, 20, 25);
 	border-left: 0.5em solid rgba(var(--swatch-primary-darker));
 }
@@ -196,8 +204,11 @@ div.blockquote {
 
 
 .hovertip {
-	width: 15% !important;
+	width: 25% !important;
 	opacity: 0;
+	color: rgb(var(--swatch-text-tertiary-color)); 
+	background-color: rgb(var(--swatch-menubg-color)) !important; /* bg-color is added via js so !important is required */ 
+	border: 0.0625rem solid rgb(var(--swatch-border-color)) !important; /* border is added via js so !important is required */
 	animation-name: fade-in;
 	animation-duration: 600ms;
 	animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -257,8 +268,8 @@ div.image-block,div.image-block img {
 		rgba(170, 170, 170, 0.25) 0%,
 		rgba(170, 170, 170, 0.15) 100%);
 	background: linear-gradient(to top,
-		rgba(var(--swatch-menubg-medium-color), 0.25) 0%,
-		rgba(var(--swatch-menubg-medium-color), 0.15) 100%);
+		rgba(var(--swatch-tertiary-color), 0.25) 0%,
+		rgba(var(--swatch-tertiary-color), 0.15) 100%);
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--swatch-background));
 	border: 0.0625rem solid rgba(12, 12, 12, 0.25);
@@ -477,8 +488,8 @@ div.image-block,div.image-block img {
 		rgba(170, 170, 170, 0.25) 0%,
 		rgba(170, 170, 170, 0.15) 100%);
 	background: linear-gradient(to top,
-		rgba(var(--swatch-menubg-medium-color), 0.25) 0%,
-		rgba(var(--swatch-menubg-medium-color), 0.15) 100%);
+		rgba(var(--swatch-tertiary-color), 0.25) 0%,
+		rgba(var(--swatch-tertiary-color), 0.15) 100%);
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--swatch-background));
 	border: 0.0625rem solid rgba(12, 12, 12, 0.25);
@@ -519,8 +530,8 @@ div.image-block,div.image-block img {
 			height: var(--rating-module-height);
 			top: 0;
 			left: 0;
-			background-color: rgb(252, 252, 252);
-			background-color: rgb(var(--swatch-menubg-black-color));
+			background-color: rgb(12, 12, 12);
+			background-color: rgb(var(--rating-module-button-color));
 			mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 103 205.3' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M4.2,75.6c24.1-2.6,48.2-5.2,74.9-8.1c0,15.6,0,29.4,0,43.3c0,20.8,0.4,41.6-0.2,62.3 c-0.3,10.5,4,16.3,13.4,20c4,1.5,7.1,5.3,10.6,8c-0.8,1.4-1.6,2.8-2.4,4.3c-32.4,0-64.8,0-97.3,0c-0.9-1.1-1.7-2.3-2.6-3.4 c3.3-2.7,6.2-7,9.9-7.8c11.4-2.3,15.3-9,15.2-19.9c-0.2-20.3-0.6-40.5,0.1-60.8c0.4-11.8-4.4-18.1-15-22.3c-4.4-1.8-7.4-7.2-11-11 C1.4,78.6,2.8,77.1,4.2,75.6z'/%3E%3Cpath fill='%23FFFFFF' d='M79.6,27c0,16.3-11,26.9-27.5,26.7c-16.5-0.2-26.2-9.9-26.2-26c0-17,10.1-27.7,26.5-27.7 C68.6-0.1,79.6,10.8,79.6,27z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 			mask-size: calc(var(--rating-module-height) * 0.35);
 			mask-position: 0.3em center;
@@ -549,7 +560,6 @@ div.image-block,div.image-block img {
 	border: solid 0.0625rem rgb(var(--swatch-primary-darkest));
 	box-shadow: 0 0.0625rem 0.375rem rgba(0, 0, 0, 0.25);
 	box-shadow: 0 0.0625rem 0.375rem var(--box-shadow);
-	-webkit-box-shadow: 0 0.0625rem 0.375rem var(--box-shadow);
 	width: 18.75rem;
 	display: flex;
 	flex-flow: column nowrap;
@@ -590,19 +600,21 @@ div.image-block,div.image-block img {
 
 .scp-image-block .scp-image-caption {
 	background-color: rgb(244, 244, 244);
-	background-color: rgb(var(--swatch-menubg-light-color));
+	background-color: rgb(var(--swatch-secondary-color));
 	border-top: solid 0.0625rem rgb(12, 12, 12);
 	border-top: solid 0.0625rem rgb(var(--swatch-menubg-black-color));
 	font-size: 80%;
 	font-weight: 700;
 	letter-spacing: 0.016em;
 	text-align: center;
-	padding: 0.125rem 0;
+	padding: 0.25em 0.5em;
+	line-height: 1.25;
+	box-sizing: border-box;
 }
 
 .scp-image-block .scp-image-caption > p {
 	margin: 0;
-	padding: 0 0.625rem;
+	padding: 0;
 }
 
 div.block-right,
@@ -626,9 +638,9 @@ table.wiki-content-table {
 
 table.wiki-content-table th {
 	background: rgb(170, 170, 170);
-	background: rgb(var(--swatch-menubg-medium-color));
+	background: rgb(var(--swatch-tertiary-color));
 	color: rgb(252, 252, 252);
-	color: rgb(var(--swatch-menutxt-light-color));
+	color: rgb(var(--swatch-text-secondary-color));
 }
 
 table.wiki-content-table th,
@@ -713,6 +725,7 @@ table.wiki-content-table tr {
 #html-body:target .page-title,
 #html-body:target #page-title,
 #html-body:target #breadcrumbs,
+#html-body:target .pseudocrumbs,
 #html-body:target #page-options-container,
 #html-body:target .page-header,
 #html-body:target .page-info-break,

@@ -5,8 +5,23 @@ html {
 
 html,body {
 	color: rgb(12, 12, 12);
-	color: rgb(var(--swatch-text-dark));
+	color: rgb(var(--swatch-text-general));
 	font-variant-ligatures: none;
+	scrollbar-color: rgba(var(--swatch-tertiary-color), 0.6) rgba(var(--swatch-tertiary-color), 0.1);
+}
+
+/* Webkit Scrollbar */
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+	background: rgba(170, 170, 170, 0.05);
+	background: rgba(var(--swatch-tertiary-color), 0.1);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+	background: rgba(170, 170, 170, 0.6);
+	background: rgba(var(--swatch-tertiary-color), 0.6);
 }
 
 body {
@@ -80,6 +95,30 @@ fieldset {
 	width: calc(100% - 2rem);
 }
 
+textarea,
+input.text,
+input.checkbox,
+div.note,
+#lock-info {
+	font-family: var(--body-font);
+	border: 0.0625rem solid rgba(var(--swatch-border-color),0.25);
+	background-color: rgb(var(--swatch-background));
+	color: rgb(var(--swatch-text-general));
+	scrollbar-color: rgba(var(--swatch-tertiary-color), 0.6) rgba(var(--swatch-tertiary-color), 0.1);
+}
+
+textarea::-webkit-scrollbar-track,
+input.text::-webkit-scrollbar-track {
+	background: rgba(170, 170, 170, 0.05);
+	background: rgba(var(--swatch-tertiary-color), 0.1);
+}
+
+textarea::-webkit-scrollbar-thumb,
+input.text::-webkit-scrollbar-thumb {
+	background: rgba(170, 170, 170, 0.6);
+	background: rgba(var(--swatch-tertiary-color), 0.6);
+}
+
 /* Standard Structure Elements */
 
 pre * {
@@ -102,7 +141,7 @@ hr {
 	height: 0.063rem;
 	border: 0;
 	border-top: 0.063rem solid rgba(66, 66, 72);
-	border-top: 0.063rem solid rgba(var(--swatch-menubg-medium-color, 66, 66, 72));
+	border-top: 0.063rem solid rgba(var(--swatch-tertiary-color, 66, 66, 72));
 	margin: 1em 0;
 	padding: 0;
 }
@@ -120,7 +159,7 @@ h6 {
 
 h1 {
 	color: rgb(12, 12, 12);
-	color: rgb(var(--black-monochrome));
+	color: rgb(var(--swatch-text-general));
 	font-weight: 700;
 	margin: 0.7em 0 0.6em;
 	padding: 0 0 0.25em;
@@ -219,7 +258,7 @@ tt {
 
 ::-webkit-scrollbar-thumb {
 	background: rgba(170, 170, 170, 0.4);
-	background: rgba(var(--swatch-menubg-medium-color), 0.4);
+	background: rgba(var(--swatch-tertiary-color), 0.4);
 }
 
 /* Setting mobile body font size to 14px/0.875rem) */

@@ -20,12 +20,12 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	scrollbar-color: rgba(170, 170, 170, 0) rgba(170, 170, 170, 0);
-	scrollbar-color: rgba(var(--swatch-menubg-medium-color), 0)
-		rgba(var(--swatch-menubg-medium-color), 0);
+	scrollbar-color: rgba(var(--swatch-tertiary-color), 0)
+		rgba(var(--swatch-tertiary-color), 0);
 	transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 	grid-area: side-bar;
 	justify-self: start;
-	background:
+	background-image:
 		/* Shadow covers */
 		linear-gradient(
 			rgba(var(--swatch-menubg-color),1) 30%,
@@ -37,10 +37,10 @@
 		/* Shadows */
 		radial-gradient(farthest-side at 50% 0,
 			rgba(var(--swatch-primary-darkest),0.5),
-			rgba(var(--black-monochrome),0)),
+			rgba(var(--swatch-menubg-black-color),0)),
 		radial-gradient(farthest-side at 50% 100%,
 			rgba(var(--swatch-primary-darkest),0.5),
-			rgba(var(--black-monochrome),0)) 0 100%;
+			rgba(var(--swatch-menubg-black-color),0)) 0 100%;
 	background-color: rgba(var(--swatch-menubg-color),1);
 	background-repeat: no-repeat;
 	background-attachment: local, local, scroll, fixed;
@@ -51,24 +51,24 @@
 /* Hover Scrollbar Behavior */
 
 #side-bar:hover {
-	scrollbar-color: rgba(170, 170, 170, 0.05);
-	scrollbar-color: rgba(var(--swatch-menubg-medium-color), 0.05);
+	scrollbar-color: rgba(170, 170, 170, 0.4) rgba(170, 170, 170, 0.05);
+	scrollbar-color: rgba(var(--swatch-tertiary-color), 0.4) rgba(var(--swatch-tertiary-color), 0.05);
 }
 
 #side-bar::-webkit-scrollbar-track,
 #side-bar::-webkit-scrollbar-thumb {
 	background: rgba(170, 170, 170, 0);
-	background: rgba(var(--swatch-menubg-medium-color), 0);
+	background: rgba(var(--swatch-tertiary-color), 0);
 }
 
 #side-bar:hover::-webkit-scrollbar-track {
 	background: rgba(170, 170, 170, 0.05);
-	background: rgba(var(--swatch-menubg-medium-color), 0.05);
+	background: rgba(var(--swatch-tertiary-color), 0.05);
 }
 
 #side-bar:hover::-webkit-scrollbar-thumb {
 	background: rgba(170, 170, 170, 0.4);
-	background: rgba(var(--swatch-menubg-medium-color), 0.4);
+	background: rgba(var(--swatch-tertiary-color), 0.4);
 }
 
 #side-bar::-webkit-scrollbar {
@@ -141,7 +141,7 @@
 
 /*Forcing default sidebar coloring on any INT branches that still use Background Color*/
 #side-bar .side-block[style*="background-color"] {
-    background-color: rgba(var(--dark-accent),0.15) !important;
+	background-color: rgba(var(--dark-accent),0.15) !important;
 }
 
 /* Chinese Specific Styling */
@@ -203,7 +203,7 @@
 	--text-shadow: rgb(var(--swatch-border-color, 12, 12, 12));
 	letter-spacing: 0.2rem;
 	color: rgb(252, 252, 252);
-	color: rgb(var(--swatch-menutxt-light-color));
+	color: rgb(var(--swatch-text-secondary-color));
 	height: 1.25rem;
 	line-height: 1.25rem;
 	text-transform: uppercase;
@@ -259,14 +259,6 @@
 	text-align: left;
 	padding-left: 1em;
 	padding-right: 3em;
-}
-
-#side-bar div.menu-item img[src*="scp-wiki-cn.wikidot"] + a[href*="scp-series"] {
-	text-align: left;
-	align-items: flex-start;
-	flex-grow: 0;
-	width: auto;
-	min-width: 45%;
 }
 
 #side-bar div.collapsible-block {
@@ -462,7 +454,7 @@ flex-grow: 1;
 
 #___gcse_0 > div > form > table > tbody > tr > td.gsc-search-button > button {
 	color: rgb(252, 252, 252);
-	color: rgb(var(--swatch-menutxt-light-color));
+	color: rgb(var(--swatch-text-secondary-color));
 	background-color: rgba(100, 3, 15, 0);
 	background-color: rgba(var(--swatch-primary-darkest), 0);
 	transition: background-color 80ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -638,7 +630,7 @@ iframe.scpnet-interwiki-frame {
 
 	#skrollr-body:target #side-bar,
 	#side-bar:target {
-		--box-shadow: rgb(var(--swatch-menutxt-light-color, 252, 252, 252));
+		--box-shadow: rgb(var(--swatch-text-secondary-color, 252, 252, 252));
 		display: block;
 		left: 0;
 		box-shadow: inset 0 0 0 -0.0625rem rgb(252, 252, 252);
@@ -651,7 +643,7 @@ iframe.scpnet-interwiki-frame {
 
 	#side-bar::-webkit-scrollbar {
 		width: 0.5rem !important;
-		background: rgba(var(--swatch-menubg-medium-color), 0.05) !important;
+		background: rgba(var(--swatch-tertiary-color), 0.05) !important;
 	}
 
 	#skrollr-body:target + #main-content,
