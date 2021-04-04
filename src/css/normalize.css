@@ -1,4 +1,3 @@
-@charset "utf-8";
 #content-wrap {
 	position: inherit;
 	margin: inherit;
@@ -41,6 +40,8 @@ ul {
 #top-bar ul {
 	/* list-style-image: inherit;
 	/* IE ONLY! IF list-style-image IS SET */
+	right: inherit;
+	bottom: inherit;
 }
 li,
 p {
@@ -332,7 +333,6 @@ sup,#header {
 	font-size: inherit;
 	color: inherit;
 }
-
 #side-bar .collapsible-block-folded {
 	background: inherit;
 }
@@ -356,6 +356,21 @@ sup,#header {
 #side-bar ul {
 	list-style-type: inherit;
 	padding: inherit;
+}
+/* interwiki frame */
+div.scpnet-interwiki-wrapper {
+    width: inherit;
+    margin-left: inherit;
+}
+iframe.scpnet-interwiki-frame {
+    height: inherit;
+    width: inherit;
+    border: inherit;
+}
+@media (min-width: 768px) {
+    iframe.scpnet-interwiki-frame, div.scpnet-interwiki-wrapper {
+        width: inherit;
+    }
 }
 /* CONTENT */
 #main-content {
@@ -1185,4 +1200,3 @@ table,#page-content div,
 		width: inherit;
 	}
 }
-

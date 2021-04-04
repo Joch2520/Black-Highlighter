@@ -9,7 +9,7 @@
 	background-repeat: no-repeat;
 	background-position: left 0.75rem top 1.1875rem;
 	background-clip: border-box;
-	background-size: auto calc(var(--header-height-on-desktop) - 2.125rem);
+	background-size: calc(var(--header-height-on-desktop) - 1.75rem);
 }
 
 body {
@@ -105,7 +105,7 @@ div#container-wrap {
 	content: "SCP Foundation";
 	content: var(--header-title);
 	color: rgb(252, 252, 252);
-	color: rgb(var(--swatch-text-light));
+	color: rgb(var(--swatch-headerh1-color));
 	text-shadow: 0.063rem 0.063rem 0.063rem rgb(12, 12, 12);
 	text-shadow: 0.063rem 0.063rem 0.063rem var(--text-shadow);
 }
@@ -526,7 +526,9 @@ form[id="search-top-box-form"] {
 	opacity: 0;
 	background-color: rgb(178, 210, 180);
 	background-color: rgba(var(--swatch-menubg-dark-color),0.93);
-	transition: opacity 80ms cubic-bezier(0.4, 0.light0, 0.2, 1), background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	transition: 
+		opacity 80ms cubic-bezier(0.4, 0.0, 0.2, 1), 
+		background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 #top-bar div.top-bar > ul > li:hover > ul,

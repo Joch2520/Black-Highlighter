@@ -88,7 +88,7 @@ fieldset {
 }
 
 #edit-page-comments {
-	resize: auto;
+	resize: both;
 	line-height: 1.5;
 	padding: 0 1rem;
 	min-height: 3rem;
@@ -128,12 +128,20 @@ pre * {
 	white-space: pre;
 	font-feature-settings: "calt" 0;
 }
-
+sub {
+	vertical-align: sub;
+	font-size: calc(var(--base-font-size) * 0.75);
+	line-height: inherit;
+}
 sup {
-	vertical-align: top;
-	position: relative;
-	top: -0.5em;
-	font-variant: sub;
+	vertical-align: super;
+	font-size: calc(var(--base-font-size) * 0.75);
+	line-height: inherit;
+}
+/* footnote reference specific styling */
+.footnoteref {
+    font-variant-numeric: ordinal;
+    font-feature-settings: "ordn" 1;
 }
 
 hr {
