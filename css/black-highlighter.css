@@ -9522,7 +9522,8 @@ div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-fo
 	margin: 0;
 }
 
-#side-bar:lang(cn) div.side-block {
+#side-bar:lang(cn) div.side-block,
+#side-bar:lang(cn) div.scpnet-interwiki-wrapper {
 	grid-column: span 2;
 }
 
