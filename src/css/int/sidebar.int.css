@@ -1016,7 +1016,8 @@
 	margin: 0;
 }
 
-#side-bar:lang(cn) div.side-block {
+#side-bar:lang(cn) div.side-block,
+#side-bar:lang(cn) div.scpnet-interwiki-wrapper {
 	grid-column: span 2;
 }
 
