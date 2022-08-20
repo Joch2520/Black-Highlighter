@@ -27,8 +27,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C,
 		U+201D, U+2022;
@@ -39,7 +39,7 @@
 	font-family: Recursive;
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
-	src: url("./fonts/Recursive_VF_1.077--subset_range_latin_1.woff2") format("woff2");
+	src: url("./Recursive_VF_1.077--subset_range_latin_1.woff2") format("woff2");
 	font-display: swap;
 	unicode-range: U+00C0-00FF;
 }
@@ -48,7 +48,7 @@
 	font-family: Inter;
 	font-style: oblique 0deg 10deg;
 	font-weight: 100 900;
-	src: url("./fonts/Inter.var.woff2?v=3.19") format("woff2");
+	src: url("./Inter.var.woff2?v=3.19") format("woff2");
 	font-display: swap;
 	unicode-range: U+00C0-00FF;
 }
@@ -58,8 +58,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+00C0-00FF;
 }
@@ -69,7 +69,7 @@
 	font-family: Recursive;
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
-	src: url("./fonts/Recursive_VF_1.077--subset_range_latin_1_punc.woff2") format("woff2");
+	src: url("./Recursive_VF_1.077--subset_range_latin_1_punc.woff2") format("woff2");
 	font-display: swap;
 	unicode-range: U+00A0-00A8, U+00AA-00BF, U+2194-2199;
 }
@@ -78,7 +78,7 @@
 	font-family: Inter;
 	font-style: oblique 0deg 10deg;
 	font-weight: 100 900;
-	src: url("./fonts/Inter.var.woff2?v=3.19") format("woff2");
+	src: url("./Inter.var.woff2?v=3.19") format("woff2");
 	font-display: swap;
 	unicode-range: U+00A0-00A8, U+00AA-00BF, U+2194-2199;
 }
@@ -88,8 +88,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+00A0-00A8, U+00AA-00BF, U+2194-2199;
 }
@@ -99,7 +99,7 @@
 	font-family: Recursive;
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
-	src: url("./fonts/Recursive_VF_1.077--subset_range_latin_ext.woff2") format("woff2");
+	src: url("./Recursive_VF_1.077--subset_range_latin_ext.woff2") format("woff2");
 	font-display: swap;
 	unicode-range: U+0100-017F;
 }
@@ -108,7 +108,7 @@
 	font-family: Inter;
 	font-style: oblique 0deg 10deg;
 	font-weight: 100 900;
-	src: url("./fonts/Inter.var.woff2?v=3.19") format("woff2");
+	src: url("./Inter.var.woff2?v=3.19") format("woff2");
 	font-display: swap;
 	unicode-range: U+0100-017F;
 }
@@ -118,8 +118,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+0100-017F;
 }
@@ -129,7 +129,7 @@
 	font-family: Recursive;
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
-	src: url("./fonts/Recursive_VF_1.077--subset_range_vietnamese.woff2") format("woff2");
+	src: url("./Recursive_VF_1.077--subset_range_vietnamese.woff2") format("woff2");
 	font-display: swap;
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
 		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -139,7 +139,7 @@
 	font-family: Inter;
 	font-style: oblique 0deg 10deg;
 	font-weight: 100 900;
-	src: url("./fonts/Inter.var.woff2?v=3.19") format("woff2");
+	src: url("./Inter.var.woff2?v=3.19") format("woff2");
 	font-display: swap;
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
 		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -150,8 +150,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
 		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -162,7 +162,7 @@
 	font-family: Recursive;
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
-	src: url("./fonts/Recursive_VF_1.077--subset_range_remaining.woff2") format("woff2");
+	src: url("./Recursive_VF_1.077--subset_range_remaining.woff2") format("woff2");
 	font-display: swap;
 	unicode-range: U+200, U+201, U+202, U+203, U+204, U+205, U+206, U+2007,
 		U+2008, U+2009, U+200A, U+200B, U+207, U+D, U+208, U+209, U+2010, U+210,
@@ -202,7 +202,7 @@
 	font-family: Inter;
 	font-style: oblique 0deg 10deg;
 	font-weight: 100 900;
-	src: url("./fonts/Inter.var.woff2?v=3.19") format("woff2");
+	src: url("./Inter.var.woff2?v=3.19") format("woff2");
 	font-display: swap;
 	unicode-range: U+200, U+201, U+202, U+203, U+204, U+205, U+206, U+2007,
 		U+2008, U+2009, U+200A, U+200B, U+207, U+D, U+208, U+209, U+2010, U+210,
@@ -243,8 +243,8 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src:
-		url("./fonts/PT-Root-UI_VF.woff2") format("woff2"),
-		url("./fonts/PT-Root-UI_VF.woff") format("woff");
+		url("./PT-Root-UI_VF.woff2") format("woff2"),
+		url("./PT-Root-UI_VF.woff") format("woff");
 	font-display: swap;
 	unicode-range: U+200, U+201, U+202, U+203, U+204, U+205, U+206, U+2007,
 		U+2008, U+2009, U+200A, U+200B, U+207, U+D, U+208, U+209, U+2010, U+210,
